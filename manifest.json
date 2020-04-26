@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Remove W3Schools from ecosia",
+    "version": "1.0",
+    "description": "Removes the W3Schools links from ecosia.",
+    "permissions": [
+        "*://*.ecosia.org/search?*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.ecosia.org/search?*"],
+            "js": ["rmw3schools.js"]
+        }
+    ]
+}
